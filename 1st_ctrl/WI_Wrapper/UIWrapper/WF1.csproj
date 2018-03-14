@@ -1,0 +1,385 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F76E4426-1691-4225-86B8-948E3DF1DF25}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WF1</RootNamespace>
+    <AssemblyName>WF1</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\UserClient\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\UserClient\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\WF1.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;k:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;k:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\WF1.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;k:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;k:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ControlLibrary">
+      <HintPath>..\ControlLibrary\obj\Debug\ControlLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddAntennaWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddAntennaWindow.Designer.cs">
+      <DependentUpon>AddAntennaWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddTerrainWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddTerrainWindow.Designer.cs">
+      <DependentUpon>AddTerrainWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddTransmitterWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddTransmitterWindow.Designer.cs">
+      <DependentUpon>AddTransmitterWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddWaveformWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddWaveformWindow.Designer.cs">
+      <DependentUpon>AddWaveformWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BoudingLimition.cs" />
+    <Compile Include="ControlNodeDBSettingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ControlNodeDBSettingForm.Designer.cs">
+      <DependentUpon>ControlNodeDBSettingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InterfenceWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InterfenceWindow.Designer.cs">
+      <DependentUpon>InterfenceWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reference.cs" />
+    <Compile Include="SettingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingForm.Designer.cs">
+      <DependentUpon>SettingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WaveformDataRecoverOfProjectTree.cs" />
+    <Compile Include="AntennaDataRecoverOfProjectTree.cs" />
+    <Compile Include="AntennaDBmanage_notice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AntennaDBmanage_notice.Designer.cs">
+      <DependentUpon>AntennaDBmanage_notice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AntennaNodeOfConMenu.cs" />
+    <Compile Include="DataClasses.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataClasses.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="DBException.cs" />
+    <Compile Include="DBmanage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DBmanage.Designer.cs">
+      <DependentUpon>DBmanage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DBmanage_notice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DBmanage_notice.Designer.cs">
+      <DependentUpon>DBmanage_notice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FileCopyUI.cs" />
+    <Compile Include="FileOperation.cs" />
+    <Compile Include="MainWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainWindow.Designer.cs">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewProject.Designer.cs">
+      <DependentUpon>NewProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewReceiverWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewReceiverWindow.Designer.cs">
+      <DependentUpon>NewReceiverWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewTerrainWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewTerrainWindow.Designer.cs">
+      <DependentUpon>NewTerrainWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewWaveformWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewWaveformWindow.Designer.cs">
+      <DependentUpon>NewWaveformWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewTransmitterWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewTransmitterWindow.Designer.cs">
+      <DependentUpon>NewTransmitterWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewAntennaWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewAntennaWindow.Designer.cs">
+      <DependentUpon>NewAntennaWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="ProjectTreeMatchString.cs" />
+    <Compile Include="ReceiverDataRecoverOfProjectTreeView.cs" />
+    <Compile Include="ReceiverNodeOfConMenu.cs" />
+    <Compile Include="ResultDownloadStateWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResultDownloadStateWindow.Designer.cs">
+      <DependentUpon>ResultDownloadStateWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResultSetWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResultSetWindow.Designer.cs">
+      <DependentUpon>ResultSetWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetupContent.cs" />
+    <Compile Include="StringFound.cs" />
+    <Compile Include="TerrainOperation.cs" />
+    <Compile Include="Translate.cs" />
+    <Compile Include="TransmitterDataRecoverOfProjectTreeView.cs" />
+    <Compile Include="TransmitterLib.cs" />
+    <Compile Include="TransmitterNodeOfConMenu.cs" />
+    <Compile Include="WaveformDBmanage_notice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WaveformDBmanage_notice.Designer.cs">
+      <DependentUpon>WaveformDBmanage_notice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WaveformWriting.cs" />
+    <Compile Include="WaveformNodeOfConMenu.cs" />
+    <Compile Include="WriteConst.cs" />
+    <EmbeddedResource Include="AntennaDBmanage_notice.resx">
+      <DependentUpon>AntennaDBmanage_notice.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlNodeDBSettingForm.resx">
+      <DependentUpon>ControlNodeDBSettingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DBmanage_notice.resx">
+      <DependentUpon>DBmanage_notice.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InterfenceWindow.resx">
+      <DependentUpon>InterfenceWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewReceiverWindow.resx">
+      <DependentUpon>NewReceiverWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResultDownloadStateWindow.resx">
+      <DependentUpon>ResultDownloadStateWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResultSetWindow.resx">
+      <DependentUpon>ResultSetWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingForm.resx">
+      <DependentUpon>SettingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WaveformDBmanage_notice.resx">
+      <DependentUpon>WaveformDBmanage_notice.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataClasses.dbml.layout">
+      <DependentUpon>DataClasses.dbml</DependentUpon>
+    </None>
+    <EmbeddedResource Include="AddAntennaWindow.resx">
+      <DependentUpon>AddAntennaWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddTerrainWindow.resx">
+      <DependentUpon>AddTerrainWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddTransmitterWindow.resx">
+      <DependentUpon>AddTransmitterWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddWaveformWindow.resx">
+      <DependentUpon>AddWaveformWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DBmanage.resx">
+      <DependentUpon>DBmanage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainWindow.resx">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewProject.resx">
+      <DependentUpon>NewProject.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewTerrainWindow.resx">
+      <DependentUpon>NewTerrainWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewWaveformWindow.resx">
+      <DependentUpon>NewWaveformWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewTransmitterWindow.resx">
+      <DependentUpon>NewTransmitterWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewAntennaWindow.resx">
+      <DependentUpon>NewAntennaWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="DataClasses.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DataClasses.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LogFileManager\LogFileManager.csproj">
+      <Project>{EAFBAB1C-C5C3-401F-879E-87E2BA928114}</Project>
+      <Name>LogFileManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WcfService\WcfService.csproj">
+      <Project>{476DA484-1FA8-494E-B97E-0A2A0BC9899E}</Project>
+      <Name>WcfService</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\DataSources\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

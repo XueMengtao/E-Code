@@ -1,0 +1,168 @@
+2013-11-19 15:33:27,807 [10] ERROR LogFileManager.ObjLog [(null)] - 未能找到文件“D:\projects\20131119\20131119.rx”。
+2013-11-19 15:33:27,913 [10] ERROR LogFileManager.ObjLog [(null)] - 未能找到文件“D:\projects\20131119\20131119.setup”。
+2013-11-19 15:33:27,953 [10] ERROR LogFileManager.ObjLog [(null)] - 未能找到文件“D:\projects\20131119\qifu2.ter”。
+2013-11-19 15:39:26,038 [8] ERROR LogFileManager.ObjLog [(null)] - 未能找到路径“D:\projects\20131119\20131119.rx”的一部分。
+2013-11-19 15:39:26,155 [8] ERROR LogFileManager.ObjLog [(null)] - 未能找到路径“D:\projects\20131119\20131119.setup”的一部分。
+2013-11-19 15:39:26,215 [8] ERROR LogFileManager.ObjLog [(null)] - 未能找到路径“D:\projects\20131119\qifu2.ter”的一部分。
+2013-11-19 15:39:36,417 [8] ERROR LogFileManager.ObjLog [(null)] - 未能找到路径“D:\projects\20131119\20131119.rx”的一部分。
+2013-11-19 15:39:36,456 [8] ERROR LogFileManager.ObjLog [(null)] - 未能找到路径“D:\projects\20131119\20131119.setup”的一部分。
+2013-11-19 15:39:36,495 [8] ERROR LogFileManager.ObjLog [(null)] - 未能找到路径“D:\projects\20131119\qifu2.ter”的一部分。
+2013-11-19 15:39:46,593 [8] ERROR LogFileManager.ObjLog [(null)] - 未能找到路径“D:\projects\20131119\20131119.rx”的一部分。
+2013-11-19 15:39:46,632 [8] ERROR LogFileManager.ObjLog [(null)] - 未能找到路径“D:\projects\20131119\20131119.setup”的一部分。
+2013-11-19 15:39:46,671 [8] ERROR LogFileManager.ObjLog [(null)] - 未能找到路径“D:\projects\20131119\qifu2.ter”的一部分。
+2013-11-19 15:39:56,766 [8] ERROR LogFileManager.ObjLog [(null)] - 未能找到路径“D:\projects\20131119\20131119.rx”的一部分。
+2013-11-19 15:39:56,804 [8] ERROR LogFileManager.ObjLog [(null)] - 未能找到路径“D:\projects\20131119\20131119.setup”的一部分。
+2013-11-19 15:39:56,843 [8] ERROR LogFileManager.ObjLog [(null)] - 未能找到路径“D:\projects\20131119\qifu2.ter”的一部分。
+2013-11-19 15:40:06,940 [8] ERROR LogFileManager.ObjLog [(null)] - 未能找到路径“D:\projects\20131119\20131119.rx”的一部分。
+2013-11-19 15:40:06,984 [8] ERROR LogFileManager.ObjLog [(null)] - 未能找到路径“D:\projects\20131119\20131119.setup”的一部分。
+2013-11-19 15:40:07,022 [8] ERROR LogFileManager.ObjLog [(null)] - 未能找到路径“D:\projects\20131119\qifu2.ter”的一部分。
+2013-11-19 15:40:17,117 [8] ERROR LogFileManager.ObjLog [(null)] - 未能找到路径“D:\projects\20131119\20131119.rx”的一部分。
+2013-11-19 15:40:17,155 [8] ERROR LogFileManager.ObjLog [(null)] - 未能找到路径“D:\projects\20131119\20131119.setup”的一部分。
+2013-11-19 15:40:17,194 [8] ERROR LogFileManager.ObjLog [(null)] - 未能找到路径“D:\projects\20131119\qifu2.ter”的一部分。
+2013-11-19 15:40:27,293 [8] ERROR LogFileManager.ObjLog [(null)] - 未能找到路径“D:\projects\20131119\20131119.rx”的一部分。
+2013-11-19 15:40:27,332 [8] ERROR LogFileManager.ObjLog [(null)] - 未能找到路径“D:\projects\20131119\20131119.setup”的一部分。
+2013-11-19 15:40:27,371 [8] ERROR LogFileManager.ObjLog [(null)] - 未能找到路径“D:\projects\20131119\qifu2.ter”的一部分。
+2013-11-19 15:40:37,466 [8] ERROR LogFileManager.ObjLog [(null)] - 未能找到路径“D:\projects\20131119\20131119.rx”的一部分。
+2013-11-19 15:40:37,511 [8] ERROR LogFileManager.ObjLog [(null)] - 未能找到路径“D:\projects\20131119\20131119.setup”的一部分。
+2013-11-19 15:40:37,549 [8] ERROR LogFileManager.ObjLog [(null)] - 未能找到路径“D:\projects\20131119\qifu2.ter”的一部分。
+2013-11-19 15:40:47,642 [8] ERROR LogFileManager.ObjLog [(null)] - 未能找到路径“D:\projects\20131119\20131119.rx”的一部分。
+2013-11-19 15:40:47,680 [8] ERROR LogFileManager.ObjLog [(null)] - 未能找到路径“D:\projects\20131119\20131119.setup”的一部分。
+2013-11-19 15:40:47,719 [8] ERROR LogFileManager.ObjLog [(null)] - 未能找到路径“D:\projects\20131119\qifu2.ter”的一部分。
+2013-11-19 15:40:57,808 [8] ERROR LogFileManager.ObjLog [(null)] - 未能找到路径“D:\projects\20131119\20131119.rx”的一部分。
+2013-11-19 15:40:57,849 [8] ERROR LogFileManager.ObjLog [(null)] - 未能找到路径“D:\projects\20131119\20131119.setup”的一部分。
+2013-11-19 15:40:57,886 [8] ERROR LogFileManager.ObjLog [(null)] - 未能找到路径“D:\projects\20131119\qifu2.ter”的一部分。
+2013-11-19 15:41:07,983 [8] ERROR LogFileManager.ObjLog [(null)] - 未能找到路径“D:\projects\20131119\20131119.rx”的一部分。
+2013-11-19 15:41:08,022 [8] ERROR LogFileManager.ObjLog [(null)] - 未能找到路径“D:\projects\20131119\20131119.setup”的一部分。
+2013-11-19 15:41:08,062 [8] ERROR LogFileManager.ObjLog [(null)] - 未能找到路径“D:\projects\20131119\qifu2.ter”的一部分。
+2013-11-19 15:41:18,152 [8] ERROR LogFileManager.ObjLog [(null)] - 未能找到路径“D:\projects\20131119\20131119.rx”的一部分。
+2013-11-19 15:41:18,192 [8] ERROR LogFileManager.ObjLog [(null)] - 未能找到路径“D:\projects\20131119\20131119.setup”的一部分。
+2013-11-19 15:41:18,230 [8] ERROR LogFileManager.ObjLog [(null)] - 未能找到路径“D:\projects\20131119\qifu2.ter”的一部分。
+2013-11-19 15:41:28,329 [8] ERROR LogFileManager.ObjLog [(null)] - 未能找到路径“D:\projects\20131119\20131119.rx”的一部分。
+2013-11-19 15:41:28,368 [8] ERROR LogFileManager.ObjLog [(null)] - 未能找到路径“D:\projects\20131119\20131119.setup”的一部分。
+2013-11-19 15:41:28,407 [8] ERROR LogFileManager.ObjLog [(null)] - 未能找到路径“D:\projects\20131119\qifu2.ter”的一部分。
+2013-11-19 15:41:38,520 [8] ERROR LogFileManager.ObjLog [(null)] - 未能找到路径“D:\projects\20131119\20131119.rx”的一部分。
+2013-11-19 15:41:38,563 [8] ERROR LogFileManager.ObjLog [(null)] - 未能找到路径“D:\projects\20131119\20131119.setup”的一部分。
+2013-11-19 15:41:38,606 [8] ERROR LogFileManager.ObjLog [(null)] - 未能找到路径“D:\projects\20131119\qifu2.ter”的一部分。
+2013-11-19 15:41:48,704 [8] ERROR LogFileManager.ObjLog [(null)] - 未能找到路径“D:\projects\20131119\20131119.rx”的一部分。
+2013-11-19 15:41:48,743 [8] ERROR LogFileManager.ObjLog [(null)] - 未能找到路径“D:\projects\20131119\20131119.setup”的一部分。
+2013-11-19 15:41:48,782 [8] ERROR LogFileManager.ObjLog [(null)] - 未能找到路径“D:\projects\20131119\qifu2.ter”的一部分。
+2013-11-19 15:41:58,879 [8] ERROR LogFileManager.ObjLog [(null)] - 未能找到路径“D:\projects\20131119\20131119.rx”的一部分。
+2013-11-19 15:41:58,918 [8] ERROR LogFileManager.ObjLog [(null)] - 未能找到路径“D:\projects\20131119\20131119.setup”的一部分。
+2013-11-19 15:41:58,956 [8] ERROR LogFileManager.ObjLog [(null)] - 未能找到路径“D:\projects\20131119\qifu2.ter”的一部分。
+2013-11-19 15:42:09,070 [8] ERROR LogFileManager.ObjLog [(null)] - 未能找到路径“D:\projects\20131119\20131119.rx”的一部分。
+2013-11-19 15:42:09,108 [8] ERROR LogFileManager.ObjLog [(null)] - 未能找到路径“D:\projects\20131119\20131119.setup”的一部分。
+2013-11-19 15:42:09,149 [8] ERROR LogFileManager.ObjLog [(null)] - 未能找到路径“D:\projects\20131119\qifu2.ter”的一部分。
+2013-11-19 15:42:19,265 [8] ERROR LogFileManager.ObjLog [(null)] - 未能找到路径“D:\projects\20131119\20131119.rx”的一部分。
+2013-11-19 15:42:19,304 [8] ERROR LogFileManager.ObjLog [(null)] - 未能找到路径“D:\projects\20131119\20131119.setup”的一部分。
+2013-11-19 15:42:19,344 [8] ERROR LogFileManager.ObjLog [(null)] - 未能找到路径“D:\projects\20131119\qifu2.ter”的一部分。
+2013-11-19 15:44:53,323 [10] ERROR LogFileManager.ObjLog [(null)] - 未能找到路径“D:\projects\20131119\20131119.rx”的一部分。
+2013-11-19 15:44:53,438 [10] ERROR LogFileManager.ObjLog [(null)] - 未能找到路径“D:\projects\20131119\20131119.setup”的一部分。
+2013-11-19 15:44:53,478 [10] ERROR LogFileManager.ObjLog [(null)] - 未能找到路径“D:\projects\20131119\qifu2.ter”的一部分。
+2013-11-19 15:45:03,657 [10] ERROR LogFileManager.ObjLog [(null)] - 未能找到路径“D:\projects\20131119\20131119.rx”的一部分。
+2013-11-19 15:45:03,697 [10] ERROR LogFileManager.ObjLog [(null)] - 未能找到路径“D:\projects\20131119\20131119.setup”的一部分。
+2013-11-19 15:45:03,737 [10] ERROR LogFileManager.ObjLog [(null)] - 未能找到路径“D:\projects\20131119\qifu2.ter”的一部分。
+2013-11-19 15:45:13,843 [10] ERROR LogFileManager.ObjLog [(null)] - 未能找到路径“D:\projects\20131119\20131119.rx”的一部分。
+2013-11-19 15:45:13,882 [10] ERROR LogFileManager.ObjLog [(null)] - 未能找到路径“D:\projects\20131119\20131119.setup”的一部分。
+2013-11-19 15:45:13,921 [10] ERROR LogFileManager.ObjLog [(null)] - 未能找到路径“D:\projects\20131119\qifu2.ter”的一部分。
+2013-11-19 15:46:22,401 [10] ERROR LogFileManager.ObjLog [(null)] - 未能找到路径“D:\projects\20131119\20131119.rx”的一部分。
+2013-11-19 15:46:22,519 [10] ERROR LogFileManager.ObjLog [(null)] - 未能找到路径“D:\projects\20131119\20131119.setup”的一部分。
+2013-11-19 15:46:22,557 [10] ERROR LogFileManager.ObjLog [(null)] - 未能找到路径“D:\projects\20131119\qifu2.ter”的一部分。
+2013-11-19 15:59:17,316 [10] ERROR LogFileManager.ObjLog [(null)] - Timeout 时间已到。在操作完成之前超时时间已过或服务器未响应。
+语句已终止。
+2013-11-19 16:00:29,485 [10] ERROR LogFileManager.ObjLog [(null)] - Timeout 时间已到。在操作完成之前超时时间已过或服务器未响应。
+2013-11-19 16:02:31,789 [9] ERROR LogFileManager.ObjLog [(null)] - Timeout 时间已到。在操作完成之前超时时间已过或服务器未响应。
+2013-11-27 14:36:02,925 [9] ERROR LogFileManager.ObjLog [(null)] - 未能找到路径“D:\projects\3333\3333.rx”的一部分。
+2013-11-27 14:36:03,067 [9] ERROR LogFileManager.ObjLog [(null)] - 未能找到路径“D:\projects\3333\3333.setup”的一部分。
+2013-11-27 14:36:03,078 [9] ERROR LogFileManager.ObjLog [(null)] - 未能找到路径“D:\projects\3333\201test.ter”的一部分。
+2013-11-27 14:37:53,384 [8] ERROR LogFileManager.ObjLog [(null)] - 未能找到路径“D:\projects\3333\3333.rx”的一部分。
+2013-11-27 14:37:53,593 [8] ERROR LogFileManager.ObjLog [(null)] - 未能找到路径“D:\projects\3333\3333.setup”的一部分。
+2013-11-27 14:37:53,643 [8] ERROR LogFileManager.ObjLog [(null)] - 未能找到路径“D:\projects\3333\201test.ter”的一部分。
+2013-11-28 16:06:14,750 [9] ERROR LogFileManager.ObjLog [(null)] - 文件“D:\projects\q3\”正由另一进程使用，因此该进程无法访问此文件。
+2013-12-30 19:36:26,821 [10] ERROR LogFileManager.ObjLog [(null)] - 无法打开登录所请求的数据库 "ParallelTask"。登录失败。
+用户 'sa' 登录失败。
+2013-12-30 19:40:22,231 [10] ERROR LogFileManager.ObjLog [(null)] - 无法打开登录所请求的数据库 "ParallelTask"。登录失败。
+用户 'sa' 登录失败。
+2014-01-03 14:32:08,549 [10] ERROR LogFileManager.ObjLog [(null)] - 无法打开登录所请求的数据库 "ParallelTask"。登录失败。
+用户 'sa' 登录失败。
+2014-01-07 14:18:50,448 [8] ERROR LogFileManager.ObjLog [(null)] - 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: Named Pipes Provider, error: 40 - 无法打开到 SQL Server 的连接)
+2014-01-07 14:19:48,447 [8] ERROR LogFileManager.ObjLog [(null)] - 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: Named Pipes Provider, error: 40 - 无法打开到 SQL Server 的连接)
+2014-01-07 14:25:23,718 [10] ERROR LogFileManager.ObjLog [(null)] - 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: Named Pipes Provider, error: 40 - 无法打开到 SQL Server 的连接)
+2014-01-07 14:26:21,720 [10] ERROR LogFileManager.ObjLog [(null)] - 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: Named Pipes Provider, error: 40 - 无法打开到 SQL Server 的连接)
+2014-01-07 14:28:14,575 [10] ERROR LogFileManager.ObjLog [(null)] - 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: Named Pipes Provider, error: 40 - 无法打开到 SQL Server 的连接)
+2014-01-08 14:37:53,047 [7] ERROR LogFileManager.ObjLog [(null)] - 未能找到文件“D:\splittx\wang5spacing20\wang5spacing201_0.0MHz.t”。
+2014-01-08 14:38:04,026 [7] ERROR LogFileManager.ObjLog [(null)] - 未能找到文件“D:\splittx\wang5spacing20\wang5spacing201_0.0MHz.t”。
+2014-01-08 14:38:14,950 [7] ERROR LogFileManager.ObjLog [(null)] - 未能找到文件“D:\splittx\wang5spacing20\wang5spacing201_0.0MHz.t”。
+2014-01-08 14:38:25,858 [7] ERROR LogFileManager.ObjLog [(null)] - 未能找到文件“D:\splittx\wang5spacing20\wang5spacing201_0.0MHz.t”。
+2014-01-08 14:38:36,723 [7] ERROR LogFileManager.ObjLog [(null)] - 未能找到文件“D:\splittx\wang5spacing20\wang5spacing201_0.0MHz.t”。
+2014-01-08 14:44:36,549 [9] ERROR LogFileManager.ObjLog [(null)] - 未能找到文件“D:\splittx\wang5spacing20\wang5spacing201_0.0MHz.t”。
+2014-01-08 14:44:47,631 [9] ERROR LogFileManager.ObjLog [(null)] - 未能找到文件“D:\splittx\wang5spacing20\wang5spacing201_0.0MHz.t”。
+2014-01-08 14:44:58,577 [11] ERROR LogFileManager.ObjLog [(null)] - 未能找到文件“D:\splittx\wang5spacing20\wang5spacing201_0.0MHz.t”。
+2014-01-08 14:46:46,171 [10] ERROR LogFileManager.ObjLog [(null)] - 未能找到文件“D:\splittx\wang5spacing20\wang5spacing201_0.0MHz.t”。
+2014-03-05 11:25:57,315 [59] ERROR LogFileManager.ObjLog [(null)] - 文件“D:\projects\124\124.setup”正由另一进程使用，因此该进程无法访问此文件。
+2014-03-05 11:29:56,301 [57] ERROR LogFileManager.ObjLog [(null)] - 文件“D:\projects\124\124.setup”正由另一进程使用，因此该进程无法访问此文件。
+2014-03-10 16:21:49,577 [9] ERROR LogFileManager.ObjLog [(null)] - 长度不能小于 0。
+参数名: length
+System.ArgumentOutOfRangeException: 长度不能小于 0。
+参数名: length
+   在 System.String.InternalSubStringWithChecks(Int32 startIndex, Int32 length, Boolean fAlwaysCopy)
+   在 WcfService.Split.FileSplit(String filepath, String setuppath) 位置 G:\ryp_newyear_workstation\1st_ctrl\WI_Wrapper\WcfService\Split.cs:行号 77
+2014-03-10 16:21:50,613 [9] ERROR LogFileManager.ObjLog [(null)] - 文件“D:\projects\qqq\qqq.setup”正由另一进程使用，因此该进程无法访问此文件。
+2014-03-10 16:22:56,807 [7] ERROR LogFileManager.ObjLog [(null)] - 长度不能小于 0。
+参数名: length
+System.ArgumentOutOfRangeException: 长度不能小于 0。
+参数名: length
+   在 System.String.InternalSubStringWithChecks(Int32 startIndex, Int32 length, Boolean fAlwaysCopy)
+   在 WcfService.Split.FileSplit(String filepath, String setuppath) 位置 G:\ryp_newyear_workstation\1st_ctrl\WI_Wrapper\WcfService\Split.cs:行号 77
+2014-03-10 16:22:56,818 [5] ERROR LogFileManager.ObjLog [(null)] - 文件“D:\projects\qw\qw.setup”正由另一进程使用，因此该进程无法访问此文件。
+2014-03-10 18:40:05,137 [6] ERROR LogFileManager.ObjLog [(null)] - 长度不能小于 0。
+参数名: length
+System.ArgumentOutOfRangeException: 长度不能小于 0。
+参数名: length
+   在 System.String.InternalSubStringWithChecks(Int32 startIndex, Int32 length, Boolean fAlwaysCopy)
+   在 WcfService.Split.FileSplit(String filepath, String setuppath) 位置 G:\ryp_newyear_workstation\1st_ctrl\WI_Wrapper\WcfService\Split.cs:行号 77
+2014-03-10 18:40:05,577 [20] ERROR LogFileManager.ObjLog [(null)] - 文件“D:\projects\qw111111\qw111111.setup”正由另一进程使用，因此该进程无法访问此文件。
+2014-03-10 18:52:39,350 [60] ERROR LogFileManager.ObjLog [(null)] - 长度不能小于 0。
+参数名: length
+System.ArgumentOutOfRangeException: 长度不能小于 0。
+参数名: length
+   在 System.String.InternalSubStringWithChecks(Int32 startIndex, Int32 length, Boolean fAlwaysCopy)
+   在 WcfService.Split.FileSplit(String filepath, String setuppath) 位置 G:\ryp_newyear_workstation\1st_ctrl\WI_Wrapper\WcfService\Split.cs:行号 77
+2014-03-10 18:53:34,778 [57] ERROR LogFileManager.ObjLog [(null)] - 长度不能小于 0。
+参数名: length
+System.ArgumentOutOfRangeException: 长度不能小于 0。
+参数名: length
+   在 System.String.InternalSubStringWithChecks(Int32 startIndex, Int32 length, Boolean fAlwaysCopy)
+   在 WcfService.Split.FileSplit(String filepath, String setuppath) 位置 G:\ryp_newyear_workstation\1st_ctrl\WI_Wrapper\WcfService\Split.cs:行号 77
+2014-03-10 18:53:38,655 [56] ERROR LogFileManager.ObjLog [(null)] - 文件“D:\projects\qw111\qw111.setup”正由另一进程使用，因此该进程无法访问此文件。
+2014-03-20 10:54:53,945 [19] ERROR LogFileManager.ObjLog [(null)] - 未能找到路径“D:\splittx\234\2341_0.0MHz.tx”的一部分。
+System.IO.DirectoryNotFoundException: 未能找到路径“D:\splittx\234\2341_0.0MHz.tx”的一部分。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   在 System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize)
+   在 System.IO.StreamWriter..ctor(String path, Boolean append)
+   在 System.IO.FileInfo.CreateText()
+   在 WcfService.Split.FileSplit(String filepath, String setuppath) 位置 G:\ryp_newyear_workstation\1st_ctrl\WI_Wrapper\WcfService\Split.cs:行号 90
+2014-03-20 10:56:14,202 [9] ERROR LogFileManager.ObjLog [(null)] - 工程文件夹不存在
+2014-03-24 14:07:26,283 [47] ERROR LogFileManager.ObjLog [(null)] - 未能找到路径“D:\projects\test1”的一部分。
+2014-03-24 15:48:57,231 [10] ERROR LogFileManager.ObjLog [(null)] - 工程缺少必要文件
+2014-03-24 15:49:09,157 [10] ERROR LogFileManager.ObjLog [(null)] - 工程缺少必要文件
+2014-03-24 15:49:46,990 [10] ERROR LogFileManager.ObjLog [(null)] - 工程缺少必要文件
+2014-03-24 15:50:37,052 [11] ERROR LogFileManager.ObjLog [(null)] - 工程缺少必要文件
+2014-03-24 16:11:03,592 [21] ERROR LogFileManager.ObjLog [(null)] - 文件“D:\projects\4235235\4235235.setup”正由另一进程使用，因此该进程无法访问此文件。
+2014-04-02 15:48:34,324 [12] ERROR LogFileManager.ObjLog [(null)] - 已成功与服务器建立连接，但是在登录前的握手期间发生错误。 (provider: SSL Provider, error: 0 - 等待的操作过时。)
+2014-04-02 15:48:34,324 [10] ERROR LogFileManager.ObjLog [(null)] - 已成功与服务器建立连接，但是在登录前的握手期间发生错误。 (provider: SSL Provider, error: 0 - 等待的操作过时。)
+2014-04-23 17:47:42,095 [10] ERROR LogFileManager.ObjLog [(null)] - 长度不能小于 0。
+参数名: length
+System.ArgumentOutOfRangeException: 长度不能小于 0。
+参数名: length
+   在 System.String.InternalSubStringWithChecks(Int32 startIndex, Int32 length, Boolean fAlwaysCopy)
+   在 WcfService.Split.FileSplit(String filepath, String setuppath) 位置 G:\ryp_newyear_workstation\1st_ctrl\WI_Wrapper\WcfService\Split.cs:行号 77
+2014-04-23 17:48:14,682 [10] ERROR LogFileManager.ObjLog [(null)] - 工程文件夹不存在
+2014-04-23 18:09:38,785 [11] ERROR LogFileManager.ObjLog [(null)] - 长度不能小于 0。
+参数名: length
+System.ArgumentOutOfRangeException: 长度不能小于 0。
+参数名: length
+   在 System.String.InternalSubStringWithChecks(Int32 startIndex, Int32 length, Boolean fAlwaysCopy)
+   在 WcfService.Split.FileSplit(String filepath, String setuppath) 位置 G:\ryp_newyear_workstation\1st_ctrl\WI_Wrapper\WcfService\Split.cs:行号 77

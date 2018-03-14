@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="ParallelTask" Class="DataClassesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=192.168.0.102;Initial Catalog=ParallelTask;User ID=sa" SettingsObjectName="WF1.Properties.Settings" SettingsPropertyName="ParallelTaskConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.WaveForm" Member="WaveForm">
+    <Type Name="WaveForm">
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Type" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Frequency" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="BandWidth" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="Phase" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="StartFrequency" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="EndFrequency" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="RollOffFactor" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="FreChangeRate" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="WaveForm_Transmitter" Member="Transmitter" ThisKey="Name" OtherKey="WaveFormName" Type="Transmitter" />
+      <Association Name="WaveForm_Antenna" Member="Antenna" ThisKey="Name" OtherKey="WaveFormName" Type="Antenna" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Transmitter" Member="Transmitter">
+    <Type Name="Transmitter">
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="RotateX" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="RotateY" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="RotateZ" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="AntennaName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="WaveFormName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="power" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Association Name="WaveForm_Transmitter" Member="WaveForm" ThisKey="WaveFormName" OtherKey="Name" Type="WaveForm" IsForeignKey="true" />
+      <Association Name="Antenna_Transmitter" Member="Antenna" ThisKey="AntennaName" OtherKey="Name" Type="Antenna" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Antenna" Member="Antenna">
+    <Type Name="Antenna">
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Type" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="WaveFormName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MaxGain" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="Polarization" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="RecerverThreshold" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="TransmissionLoss" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="VSWR" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="Temperature" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="Radius" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="BlockageRadius" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ApertureDistribution" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="EdgeTeper" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Length" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Pitch" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Association Name="Antenna_Transmitter" Member="Transmitter" ThisKey="Name" OtherKey="AntennaName" Type="Transmitter" />
+      <Association Name="WaveForm_Antenna" Member="WaveForm" ThisKey="WaveFormName" OtherKey="Name" Type="WaveForm" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

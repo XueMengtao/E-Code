@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/TranmitterLib" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/TranmitterLib" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="WaveForm">
+    <xs:sequence>
+      <xs:element name="BandWidth" type="xs:double" />
+      <xs:element name="EndFrequency" nillable="true" type="xs:double" />
+      <xs:element name="FreChangeRate" nillable="true" type="xs:string" />
+      <xs:element name="Frequency" type="xs:double" />
+      <xs:element name="Name" nillable="true" type="xs:string" />
+      <xs:element name="Phase" nillable="true" type="xs:double" />
+      <xs:element name="RollOffFactor" nillable="true" type="xs:double" />
+      <xs:element name="StartFrequency" nillable="true" type="xs:double" />
+      <xs:element name="Type" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="WaveForm" nillable="true" type="tns:WaveForm" />
+  <xs:complexType name="Antenna">
+    <xs:sequence>
+      <xs:element name="ApertureDistribution" nillable="true" type="xs:string" />
+      <xs:element name="BlockageRadius" nillable="true" type="xs:double" />
+      <xs:element name="EdgeTeper" nillable="true" type="xs:double" />
+      <xs:element name="Length" nillable="true" type="xs:double" />
+      <xs:element name="MaxGain" type="xs:double" />
+      <xs:element name="Name" nillable="true" type="xs:string" />
+      <xs:element name="Pitch" nillable="true" type="xs:double" />
+      <xs:element name="Polarization" nillable="true" type="xs:string" />
+      <xs:element name="Radius" nillable="true" type="xs:double" />
+      <xs:element name="RecieveThrehold" type="xs:double" />
+      <xs:element name="Temperature" type="xs:double" />
+      <xs:element name="TransmissionLoss" type="xs:double" />
+      <xs:element name="Type" nillable="true" type="xs:string" />
+      <xs:element name="VSWR" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Antenna" nillable="true" type="tns:Antenna" />
+  <xs:complexType name="Transmitter">
+    <xs:sequence>
+      <xs:element name="AntennaName" nillable="true" type="xs:string" />
+      <xs:element name="Name" nillable="true" type="xs:string" />
+      <xs:element name="Power" type="xs:double" />
+      <xs:element name="RotateX" type="xs:double" />
+      <xs:element name="RotateY" type="xs:double" />
+      <xs:element name="RotateZ" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Transmitter" nillable="true" type="tns:Transmitter" />
+  <xs:complexType name="TerInfo">
+    <xs:sequence>
+      <xs:element name="Vertex1X" type="xs:double" />
+      <xs:element name="Vertex1Y" type="xs:double" />
+      <xs:element name="Vertex1Z" type="xs:double" />
+      <xs:element name="Vertex2X" type="xs:double" />
+      <xs:element name="Vertex2Y" type="xs:double" />
+      <xs:element name="Vertex2Z" type="xs:double" />
+      <xs:element name="Vertex3X" type="xs:double" />
+      <xs:element name="Vertex3Y" type="xs:double" />
+      <xs:element name="Vertex3Z" type="xs:double" />
+      <xs:element name="Vertex4X" type="xs:double" />
+      <xs:element name="Vertex4Y" type="xs:double" />
+      <xs:element name="Vertex4Z" type="xs:double" />
+      <xs:element name="Zmax" type="xs:double" />
+      <xs:element name="Zmin" type="xs:double" />
+      <xs:element name="name" nillable="true" type="xs:string" />
+      <xs:element name="originX" type="xs:double" />
+      <xs:element name="originY" type="xs:double" />
+      <xs:element name="path" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TerInfo" nillable="true" type="tns:TerInfo" />
+  <xs:complexType name="TaskInfo">
+    <xs:sequence>
+      <xs:element name="ProName" nillable="true" type="xs:string" />
+      <xs:element name="TaskID" type="xs:int" />
+      <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="filenames" nillable="true" type="q1:ArrayOfstring" />
+      <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="filepaths" nillable="true" type="q2:ArrayOfstring" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TaskInfo" nillable="true" type="tns:TaskInfo" />
+  <xs:complexType name="ArrayOfProjectInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ProjectInfo" nillable="true" type="tns:ProjectInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfProjectInfo" nillable="true" type="tns:ArrayOfProjectInfo" />
+  <xs:complexType name="ProjectInfo">
+    <xs:sequence>
+      <xs:element name="CreateTime" nillable="true" type="xs:dateTime" />
+      <xs:element name="Directory" nillable="true" type="xs:string" />
+      <xs:element name="EndTime" nillable="true" type="xs:dateTime" />
+      <xs:element name="Name" nillable="true" type="xs:string" />
+      <xs:element name="Percent" nillable="true" type="xs:string" />
+      <xs:element name="ProState" type="xs:short" />
+      <xs:element name="ResultDirectory" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ProjectInfo" nillable="true" type="tns:ProjectInfo" />
+  <xs:complexType name="Material">
+    <xs:sequence>
+      <xs:element name="blue" nillable="true" type="xs:int" />
+      <xs:element name="conductivity" nillable="true" type="xs:double" />
+      <xs:element name="green" nillable="true" type="xs:int" />
+      <xs:element name="layerName" nillable="true" type="xs:string" />
+      <xs:element name="layerOrder" nillable="true" type="xs:int" />
+      <xs:element name="materialName" nillable="true" type="xs:string" />
+      <xs:element name="materialSort" nillable="true" type="xs:string" />
+      <xs:element name="permittivity" nillable="true" type="xs:double" />
+      <xs:element name="red" nillable="true" type="xs:int" />
+      <xs:element name="roughness" nillable="true" type="xs:double" />
+      <xs:element name="thickness" nillable="true" type="xs:double" />
+      <xs:element name="updateMaterial" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Material" nillable="true" type="tns:Material" />
+  <xs:complexType name="ArrayOfMaterial">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Material" nillable="true" type="tns:Material" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMaterial" nillable="true" type="tns:ArrayOfMaterial" />
+  <xs:complexType name="TMaterial">
+    <xs:sequence>
+      <xs:element name="conductivity" nillable="true" type="xs:double" />
+      <xs:element name="materialName" nillable="true" type="xs:string" />
+      <xs:element name="permittivity" nillable="true" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TMaterial" nillable="true" type="tns:TMaterial" />
+  <xs:complexType name="ZMaterial">
+    <xs:sequence>
+      <xs:element name="blue" nillable="true" type="xs:int" />
+      <xs:element name="conductivity" nillable="true" type="xs:double" />
+      <xs:element name="green" nillable="true" type="xs:int" />
+      <xs:element name="materialName" nillable="true" type="xs:string" />
+      <xs:element name="permittivity" nillable="true" type="xs:double" />
+      <xs:element name="red" nillable="true" type="xs:int" />
+      <xs:element name="roughness" nillable="true" type="xs:double" />
+      <xs:element name="thickness" nillable="true" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ZMaterial" nillable="true" type="tns:ZMaterial" />
+  <xs:complexType name="LZMaterial">
+    <xs:sequence>
+      <xs:element name="blue" nillable="true" type="xs:int" />
+      <xs:element name="conductivity" nillable="true" type="xs:double" />
+      <xs:element name="green" nillable="true" type="xs:int" />
+      <xs:element name="layernum" type="xs:int" />
+      <xs:element name="materialName" nillable="true" type="xs:string" />
+      <xs:element name="permittivity" nillable="true" type="xs:double" />
+      <xs:element name="red" nillable="true" type="xs:int" />
+      <xs:element name="roughness" nillable="true" type="xs:double" />
+      <xs:element name="thickness" nillable="true" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LZMaterial" nillable="true" type="tns:LZMaterial" />
+  <xs:complexType name="ArrayOfTMaterial">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TMaterial" nillable="true" type="tns:TMaterial" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTMaterial" nillable="true" type="tns:ArrayOfTMaterial" />
+  <xs:complexType name="ArrayOfZMaterial">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ZMaterial" nillable="true" type="tns:ZMaterial" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfZMaterial" nillable="true" type="tns:ArrayOfZMaterial" />
+  <xs:complexType name="ArrayOfLZMaterial">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="LZMaterial" nillable="true" type="tns:LZMaterial" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfLZMaterial" nillable="true" type="tns:ArrayOfLZMaterial" />
+  <xs:complexType name="ZDYMaterial">
+    <xs:sequence>
+      <xs:element name="blue" nillable="true" type="xs:int" />
+      <xs:element name="conductivity" type="xs:double" />
+      <xs:element name="green" nillable="true" type="xs:int" />
+      <xs:element name="layernum" type="xs:int" />
+      <xs:element name="materialName" nillable="true" type="xs:string" />
+      <xs:element name="permittivity" type="xs:double" />
+      <xs:element name="red" nillable="true" type="xs:int" />
+      <xs:element name="roughness" type="xs:double" />
+      <xs:element name="thickness" type="xs:double" />
+      <xs:element name="tmaterialName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ZDYMaterial" nillable="true" type="tns:ZDYMaterial" />
+  <xs:complexType name="ArrayOfZDYMaterial">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ZDYMaterial" nillable="true" type="tns:ZDYMaterial" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfZDYMaterial" nillable="true" type="tns:ArrayOfZDYMaterial" />
+</xs:schema>

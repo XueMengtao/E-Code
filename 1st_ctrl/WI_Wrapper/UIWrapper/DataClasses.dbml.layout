@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DataClasses">
+  <DataContextMoniker Name="/DataClassesDataContext" />
+  <nestedChildShapes>
+    <classShape Id="c9d88431-9d4f-4f8a-93e8-bcfb72b55890" absoluteBounds="0.5, 0.625, 2, 2.5266442871093751">
+      <DataClassMoniker Name="/DataClassesDataContext/WaveForm" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8f1cc8cc-d321-4482-b452-270a16f0ede4" absoluteBounds="0.51500000000000012, 1.085, 1.9700000000000002, 1.966644287109375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c34ca530-a5ea-4bc9-9205-d0a7c5da7d8f" absoluteBounds="1.375, 4, 2, 2.1446048990885416">
+      <DataClassMoniker Name="/DataClassesDataContext/Transmitter" />
+      <nestedChildShapes>
+        <elementListCompartment Id="61ce0f10-1d79-4edf-81e9-82b83911a2a5" absoluteBounds="1.3900000000000001, 4.46, 1.9700000000000002, 1.5846048990885415" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(1.9375 : 3.15164428710938); (1.9375 : 4)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataClassesDataContext/WaveForm/WaveForm_Transmitter" />
+      <nodes>
+        <classShapeMoniker Id="c9d88431-9d4f-4f8a-93e8-bcfb72b55890" />
+        <classShapeMoniker Id="c34ca530-a5ea-4bc9-9205-d0a7c5da7d8f" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="319050d4-156b-4882-8050-7917792af541" absoluteBounds="4.125, 0.75, 2, 3.6727624511718746">
+      <DataClassMoniker Name="/DataClassesDataContext/Antenna" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c51e708c-7657-40b4-a082-8d5a3505573c" absoluteBounds="4.1400000000000006, 1.21, 1.9700000000000002, 3.112762451171875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4.125 : 4.21138122558594); (3.375 : 4.21138122558594)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataClassesDataContext/Antenna/Antenna_Transmitter" />
+      <nodes>
+        <classShapeMoniker Id="319050d4-156b-4882-8050-7917792af541" />
+        <classShapeMoniker Id="c34ca530-a5ea-4bc9-9205-d0a7c5da7d8f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.5 : 1.95082214355469); (4.125 : 1.95082214355469)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataClassesDataContext/WaveForm/WaveForm_Antenna" />
+      <nodes>
+        <classShapeMoniker Id="c9d88431-9d4f-4f8a-93e8-bcfb72b55890" />
+        <classShapeMoniker Id="319050d4-156b-4882-8050-7917792af541" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

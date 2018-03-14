@@ -1,0 +1,854 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/WcfService" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/TranmitterLib" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_iGetTaskResultDir_InputMessage">
+    <wsdl:part name="parameters" element="tns:iGetTaskResultDir" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iGetTaskResultDir_OutputMessage">
+    <wsdl:part name="parameters" element="tns:iGetTaskResultDirResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iGetTaskResultDir_WcfExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q1="http://schemas.datacontract.org/2004/07/WcfService" name="detail" element="q1:WcfException" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iGetResultFileNames_InputMessage">
+    <wsdl:part name="parameters" element="tns:iGetResultFileNames" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iGetResultFileNames_OutputMessage">
+    <wsdl:part name="parameters" element="tns:iGetResultFileNamesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iGetResultFileNames_WcfExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://schemas.datacontract.org/2004/07/WcfService" name="detail" element="q2:WcfException" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iDelProject_InputMessage">
+    <wsdl:part name="parameters" element="tns:iDelProject" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iDelProject_OutputMessage">
+    <wsdl:part name="parameters" element="tns:iDelProjectResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iDelProject_WcfExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://schemas.datacontract.org/2004/07/WcfService" name="detail" element="q3:WcfException" />
+  </wsdl:message>
+  <wsdl:message name="IService1_HeartBeat_InputMessage">
+    <wsdl:part name="parameters" element="tns:HeartBeat" />
+  </wsdl:message>
+  <wsdl:message name="IService1_HeartBeat_OutputMessage">
+    <wsdl:part name="parameters" element="tns:HeartBeatResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_HeartBeat_WcfExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q4="http://schemas.datacontract.org/2004/07/WcfService" name="detail" element="q4:WcfException" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iGetAllWaveFormNames_InputMessage">
+    <wsdl:part name="parameters" element="tns:iGetAllWaveFormNames" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iGetAllWaveFormNames_OutputMessage">
+    <wsdl:part name="parameters" element="tns:iGetAllWaveFormNamesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iGetAllWaveFormNames_WcfExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q5="http://schemas.datacontract.org/2004/07/WcfService" name="detail" element="q5:WcfException" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iGetAllWaveForm_InputMessage">
+    <wsdl:part name="parameters" element="tns:iGetAllWaveForm" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iGetAllWaveForm_OutputMessage">
+    <wsdl:part name="parameters" element="tns:iGetAllWaveFormResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iGetAllWaveForm_WcfExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q6="http://schemas.datacontract.org/2004/07/WcfService" name="detail" element="q6:WcfException" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iGetWaveForm_InputMessage">
+    <wsdl:part name="parameters" element="tns:iGetWaveForm" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iGetWaveForm_OutputMessage">
+    <wsdl:part name="parameters" element="tns:iGetWaveFormResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iGetWaveForm_WcfExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q7="http://schemas.datacontract.org/2004/07/WcfService" name="detail" element="q7:WcfException" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iAddWaveForm_InputMessage">
+    <wsdl:part name="parameters" element="tns:iAddWaveForm" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iAddWaveForm_OutputMessage">
+    <wsdl:part name="parameters" element="tns:iAddWaveFormResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iAddWaveForm_WcfExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q8="http://schemas.datacontract.org/2004/07/WcfService" name="detail" element="q8:WcfException" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iDelWaveForm_InputMessage">
+    <wsdl:part name="parameters" element="tns:iDelWaveForm" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iDelWaveForm_OutputMessage">
+    <wsdl:part name="parameters" element="tns:iDelWaveFormResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iDelWaveForm_WcfExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q9="http://schemas.datacontract.org/2004/07/WcfService" name="detail" element="q9:WcfException" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iUpdateWaveForm_InputMessage">
+    <wsdl:part name="parameters" element="tns:iUpdateWaveForm" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iUpdateWaveForm_OutputMessage">
+    <wsdl:part name="parameters" element="tns:iUpdateWaveFormResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iUpdateWaveForm_WcfExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q10="http://schemas.datacontract.org/2004/07/WcfService" name="detail" element="q10:WcfException" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iGetAllAntennaNames_InputMessage">
+    <wsdl:part name="parameters" element="tns:iGetAllAntennaNames" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iGetAllAntennaNames_OutputMessage">
+    <wsdl:part name="parameters" element="tns:iGetAllAntennaNamesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iGetAllAntennaNames_WcfExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q11="http://schemas.datacontract.org/2004/07/WcfService" name="detail" element="q11:WcfException" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iGetAllAntenna_InputMessage">
+    <wsdl:part name="parameters" element="tns:iGetAllAntenna" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iGetAllAntenna_OutputMessage">
+    <wsdl:part name="parameters" element="tns:iGetAllAntennaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iGetAllAntenna_WcfExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q12="http://schemas.datacontract.org/2004/07/WcfService" name="detail" element="q12:WcfException" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iGetAntenna_InputMessage">
+    <wsdl:part name="parameters" element="tns:iGetAntenna" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iGetAntenna_OutputMessage">
+    <wsdl:part name="parameters" element="tns:iGetAntennaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iGetAntenna_WcfExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q13="http://schemas.datacontract.org/2004/07/WcfService" name="detail" element="q13:WcfException" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iAddAntenna_InputMessage">
+    <wsdl:part name="parameters" element="tns:iAddAntenna" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iAddAntenna_OutputMessage">
+    <wsdl:part name="parameters" element="tns:iAddAntennaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iAddAntenna_WcfExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q14="http://schemas.datacontract.org/2004/07/WcfService" name="detail" element="q14:WcfException" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iDelAntenna_InputMessage">
+    <wsdl:part name="parameters" element="tns:iDelAntenna" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iDelAntenna_OutputMessage">
+    <wsdl:part name="parameters" element="tns:iDelAntennaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iDelAntenna_WcfExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q15="http://schemas.datacontract.org/2004/07/WcfService" name="detail" element="q15:WcfException" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iUpdateAntenna_InputMessage">
+    <wsdl:part name="parameters" element="tns:iUpdateAntenna" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iUpdateAntenna_OutputMessage">
+    <wsdl:part name="parameters" element="tns:iUpdateAntennaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iUpdateAntenna_WcfExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q16="http://schemas.datacontract.org/2004/07/WcfService" name="detail" element="q16:WcfException" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iGetAllTransmitter_InputMessage">
+    <wsdl:part name="parameters" element="tns:iGetAllTransmitter" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iGetAllTransmitter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:iGetAllTransmitterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iGetAllTransmitter_WcfExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q17="http://schemas.datacontract.org/2004/07/WcfService" name="detail" element="q17:WcfException" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iGetTransmitter_InputMessage">
+    <wsdl:part name="parameters" element="tns:iGetTransmitter" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iGetTransmitter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:iGetTransmitterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iGetTransmitter_WcfExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q18="http://schemas.datacontract.org/2004/07/WcfService" name="detail" element="q18:WcfException" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iAddTransmitter_InputMessage">
+    <wsdl:part name="parameters" element="tns:iAddTransmitter" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iAddTransmitter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:iAddTransmitterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iAddTransmitter_WcfExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q19="http://schemas.datacontract.org/2004/07/WcfService" name="detail" element="q19:WcfException" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iDelTransmitter_InputMessage">
+    <wsdl:part name="parameters" element="tns:iDelTransmitter" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iDelTransmitter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:iDelTransmitterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iDelTransmitter_WcfExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q20="http://schemas.datacontract.org/2004/07/WcfService" name="detail" element="q20:WcfException" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iUpdateTransmitter_InputMessage">
+    <wsdl:part name="parameters" element="tns:iUpdateTransmitter" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iUpdateTransmitter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:iUpdateTransmitterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iUpdateTransmitter_WcfExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q21="http://schemas.datacontract.org/2004/07/WcfService" name="detail" element="q21:WcfException" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iGetTerNames_InputMessage">
+    <wsdl:part name="parameters" element="tns:iGetTerNames" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iGetTerNames_OutputMessage">
+    <wsdl:part name="parameters" element="tns:iGetTerNamesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iGetTerNames_WcfExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q22="http://schemas.datacontract.org/2004/07/WcfService" name="detail" element="q22:WcfException" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iGetTer_InputMessage">
+    <wsdl:part name="parameters" element="tns:iGetTer" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iGetTer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:iGetTerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iGetTer_WcfExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q23="http://schemas.datacontract.org/2004/07/WcfService" name="detail" element="q23:WcfException" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iAddTerInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:iAddTerInfo" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iAddTerInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:iAddTerInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iAddTerInfo_WcfExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q24="http://schemas.datacontract.org/2004/07/WcfService" name="detail" element="q24:WcfException" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iDelTerInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:iDelTerInfo" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iDelTerInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:iDelTerInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iDelTerInfo_WcfExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q25="http://schemas.datacontract.org/2004/07/WcfService" name="detail" element="q25:WcfException" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CreatTables_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreatTables" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CreatTables_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreatTablesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CreatTables_WcfExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q26="http://schemas.datacontract.org/2004/07/WcfService" name="detail" element="q26:WcfException" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetData" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetData_WcfExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q27="http://schemas.datacontract.org/2004/07/WcfService" name="detail" element="q27:WcfException" />
+  </wsdl:message>
+  <wsdl:message name="IService1_PutData_InputMessage">
+    <wsdl:part name="parameters" element="tns:PutData" />
+  </wsdl:message>
+  <wsdl:message name="IService1_PutData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PutDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_PutData_WcfExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q28="http://schemas.datacontract.org/2004/07/WcfService" name="detail" element="q28:WcfException" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iGetMinTaskID_InputMessage">
+    <wsdl:part name="parameters" element="tns:iGetMinTaskID" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iGetMinTaskID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:iGetMinTaskIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iGetMinTaskID_WcfExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q29="http://schemas.datacontract.org/2004/07/WcfService" name="detail" element="q29:WcfException" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iGetFilePath_InputMessage">
+    <wsdl:part name="parameters" element="tns:iGetFilePath" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iGetFilePath_OutputMessage">
+    <wsdl:part name="parameters" element="tns:iGetFilePathResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iGetFilePath_WcfExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q30="http://schemas.datacontract.org/2004/07/WcfService" name="detail" element="q30:WcfException" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iSetTaskState_InputMessage">
+    <wsdl:part name="parameters" element="tns:iSetTaskState" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iSetTaskState_OutputMessage">
+    <wsdl:part name="parameters" element="tns:iSetTaskStateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iSetTaskState_WcfExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q31="http://schemas.datacontract.org/2004/07/WcfService" name="detail" element="q31:WcfException" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iGetProjectInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:iGetProjectInfo" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iGetProjectInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:iGetProjectInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_iGetProjectInfo_WcfExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q32="http://schemas.datacontract.org/2004/07/WcfService" name="detail" element="q32:WcfException" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="iGetTaskResultDir">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/iGetTaskResultDir" message="tns:IService1_iGetTaskResultDir_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/iGetTaskResultDirResponse" message="tns:IService1_iGetTaskResultDir_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IService1/iGetTaskResultDirWcfExceptionFault" name="WcfExceptionFault" message="tns:IService1_iGetTaskResultDir_WcfExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="iGetResultFileNames">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/iGetResultFileNames" message="tns:IService1_iGetResultFileNames_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/iGetResultFileNamesResponse" message="tns:IService1_iGetResultFileNames_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IService1/iGetResultFileNamesWcfExceptionFault" name="WcfExceptionFault" message="tns:IService1_iGetResultFileNames_WcfExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="iDelProject">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/iDelProject" message="tns:IService1_iDelProject_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/iDelProjectResponse" message="tns:IService1_iDelProject_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IService1/iDelProjectWcfExceptionFault" name="WcfExceptionFault" message="tns:IService1_iDelProject_WcfExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="HeartBeat">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/HeartBeat" message="tns:IService1_HeartBeat_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/HeartBeatResponse" message="tns:IService1_HeartBeat_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IService1/HeartBeatWcfExceptionFault" name="WcfExceptionFault" message="tns:IService1_HeartBeat_WcfExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="iGetAllWaveFormNames">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/iGetAllWaveFormNames" message="tns:IService1_iGetAllWaveFormNames_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/iGetAllWaveFormNamesResponse" message="tns:IService1_iGetAllWaveFormNames_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IService1/iGetAllWaveFormNamesWcfExceptionFault" name="WcfExceptionFault" message="tns:IService1_iGetAllWaveFormNames_WcfExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="iGetAllWaveForm">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/iGetAllWaveForm" message="tns:IService1_iGetAllWaveForm_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/iGetAllWaveFormResponse" message="tns:IService1_iGetAllWaveForm_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IService1/iGetAllWaveFormWcfExceptionFault" name="WcfExceptionFault" message="tns:IService1_iGetAllWaveForm_WcfExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="iGetWaveForm">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/iGetWaveForm" message="tns:IService1_iGetWaveForm_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/iGetWaveFormResponse" message="tns:IService1_iGetWaveForm_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IService1/iGetWaveFormWcfExceptionFault" name="WcfExceptionFault" message="tns:IService1_iGetWaveForm_WcfExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="iAddWaveForm">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/iAddWaveForm" message="tns:IService1_iAddWaveForm_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/iAddWaveFormResponse" message="tns:IService1_iAddWaveForm_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IService1/iAddWaveFormWcfExceptionFault" name="WcfExceptionFault" message="tns:IService1_iAddWaveForm_WcfExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="iDelWaveForm">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/iDelWaveForm" message="tns:IService1_iDelWaveForm_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/iDelWaveFormResponse" message="tns:IService1_iDelWaveForm_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IService1/iDelWaveFormWcfExceptionFault" name="WcfExceptionFault" message="tns:IService1_iDelWaveForm_WcfExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="iUpdateWaveForm">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/iUpdateWaveForm" message="tns:IService1_iUpdateWaveForm_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/iUpdateWaveFormResponse" message="tns:IService1_iUpdateWaveForm_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IService1/iUpdateWaveFormWcfExceptionFault" name="WcfExceptionFault" message="tns:IService1_iUpdateWaveForm_WcfExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="iGetAllAntennaNames">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/iGetAllAntennaNames" message="tns:IService1_iGetAllAntennaNames_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/iGetAllAntennaNamesResponse" message="tns:IService1_iGetAllAntennaNames_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IService1/iGetAllAntennaNamesWcfExceptionFault" name="WcfExceptionFault" message="tns:IService1_iGetAllAntennaNames_WcfExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="iGetAllAntenna">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/iGetAllAntenna" message="tns:IService1_iGetAllAntenna_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/iGetAllAntennaResponse" message="tns:IService1_iGetAllAntenna_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IService1/iGetAllAntennaWcfExceptionFault" name="WcfExceptionFault" message="tns:IService1_iGetAllAntenna_WcfExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="iGetAntenna">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/iGetAntenna" message="tns:IService1_iGetAntenna_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/iGetAntennaResponse" message="tns:IService1_iGetAntenna_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IService1/iGetAntennaWcfExceptionFault" name="WcfExceptionFault" message="tns:IService1_iGetAntenna_WcfExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="iAddAntenna">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/iAddAntenna" message="tns:IService1_iAddAntenna_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/iAddAntennaResponse" message="tns:IService1_iAddAntenna_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IService1/iAddAntennaWcfExceptionFault" name="WcfExceptionFault" message="tns:IService1_iAddAntenna_WcfExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="iDelAntenna">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/iDelAntenna" message="tns:IService1_iDelAntenna_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/iDelAntennaResponse" message="tns:IService1_iDelAntenna_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IService1/iDelAntennaWcfExceptionFault" name="WcfExceptionFault" message="tns:IService1_iDelAntenna_WcfExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="iUpdateAntenna">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/iUpdateAntenna" message="tns:IService1_iUpdateAntenna_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/iUpdateAntennaResponse" message="tns:IService1_iUpdateAntenna_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IService1/iUpdateAntennaWcfExceptionFault" name="WcfExceptionFault" message="tns:IService1_iUpdateAntenna_WcfExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="iGetAllTransmitter">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/iGetAllTransmitter" message="tns:IService1_iGetAllTransmitter_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/iGetAllTransmitterResponse" message="tns:IService1_iGetAllTransmitter_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IService1/iGetAllTransmitterWcfExceptionFault" name="WcfExceptionFault" message="tns:IService1_iGetAllTransmitter_WcfExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="iGetTransmitter">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/iGetTransmitter" message="tns:IService1_iGetTransmitter_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/iGetTransmitterResponse" message="tns:IService1_iGetTransmitter_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IService1/iGetTransmitterWcfExceptionFault" name="WcfExceptionFault" message="tns:IService1_iGetTransmitter_WcfExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="iAddTransmitter">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/iAddTransmitter" message="tns:IService1_iAddTransmitter_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/iAddTransmitterResponse" message="tns:IService1_iAddTransmitter_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IService1/iAddTransmitterWcfExceptionFault" name="WcfExceptionFault" message="tns:IService1_iAddTransmitter_WcfExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="iDelTransmitter">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/iDelTransmitter" message="tns:IService1_iDelTransmitter_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/iDelTransmitterResponse" message="tns:IService1_iDelTransmitter_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IService1/iDelTransmitterWcfExceptionFault" name="WcfExceptionFault" message="tns:IService1_iDelTransmitter_WcfExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="iUpdateTransmitter">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/iUpdateTransmitter" message="tns:IService1_iUpdateTransmitter_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/iUpdateTransmitterResponse" message="tns:IService1_iUpdateTransmitter_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IService1/iUpdateTransmitterWcfExceptionFault" name="WcfExceptionFault" message="tns:IService1_iUpdateTransmitter_WcfExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="iGetTerNames">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/iGetTerNames" message="tns:IService1_iGetTerNames_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/iGetTerNamesResponse" message="tns:IService1_iGetTerNames_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IService1/iGetTerNamesWcfExceptionFault" name="WcfExceptionFault" message="tns:IService1_iGetTerNames_WcfExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="iGetTer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/iGetTer" message="tns:IService1_iGetTer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/iGetTerResponse" message="tns:IService1_iGetTer_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IService1/iGetTerWcfExceptionFault" name="WcfExceptionFault" message="tns:IService1_iGetTer_WcfExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="iAddTerInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/iAddTerInfo" message="tns:IService1_iAddTerInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/iAddTerInfoResponse" message="tns:IService1_iAddTerInfo_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IService1/iAddTerInfoWcfExceptionFault" name="WcfExceptionFault" message="tns:IService1_iAddTerInfo_WcfExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="iDelTerInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/iDelTerInfo" message="tns:IService1_iDelTerInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/iDelTerInfoResponse" message="tns:IService1_iDelTerInfo_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IService1/iDelTerInfoWcfExceptionFault" name="WcfExceptionFault" message="tns:IService1_iDelTerInfo_WcfExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreatTables">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/CreatTables" message="tns:IService1_CreatTables_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/CreatTablesResponse" message="tns:IService1_CreatTables_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IService1/CreatTablesWcfExceptionFault" name="WcfExceptionFault" message="tns:IService1_CreatTables_WcfExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetData" message="tns:IService1_GetData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetDataResponse" message="tns:IService1_GetData_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IService1/GetDataWcfExceptionFault" name="WcfExceptionFault" message="tns:IService1_GetData_WcfExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PutData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/PutData" message="tns:IService1_PutData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/PutDataResponse" message="tns:IService1_PutData_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IService1/PutDataWcfExceptionFault" name="WcfExceptionFault" message="tns:IService1_PutData_WcfExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="iGetMinTaskID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/iGetMinTaskID" message="tns:IService1_iGetMinTaskID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/iGetMinTaskIDResponse" message="tns:IService1_iGetMinTaskID_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IService1/iGetMinTaskIDWcfExceptionFault" name="WcfExceptionFault" message="tns:IService1_iGetMinTaskID_WcfExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="iGetFilePath">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/iGetFilePath" message="tns:IService1_iGetFilePath_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/iGetFilePathResponse" message="tns:IService1_iGetFilePath_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IService1/iGetFilePathWcfExceptionFault" name="WcfExceptionFault" message="tns:IService1_iGetFilePath_WcfExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="iSetTaskState">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/iSetTaskState" message="tns:IService1_iSetTaskState_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/iSetTaskStateResponse" message="tns:IService1_iSetTaskState_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IService1/iSetTaskStateWcfExceptionFault" name="WcfExceptionFault" message="tns:IService1_iSetTaskState_WcfExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="iGetProjectInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/iGetProjectInfo" message="tns:IService1_iGetProjectInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/iGetProjectInfoResponse" message="tns:IService1_iGetProjectInfo_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IService1/iGetProjectInfoWcfExceptionFault" name="WcfExceptionFault" message="tns:IService1_iGetProjectInfo_WcfExceptionFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="iGetTaskResultDir">
+      <soap:operation soapAction="http://tempuri.org/IService1/iGetTaskResultDir" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="WcfExceptionFault">
+        <soap:fault use="literal" name="WcfExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="iGetResultFileNames">
+      <soap:operation soapAction="http://tempuri.org/IService1/iGetResultFileNames" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="WcfExceptionFault">
+        <soap:fault use="literal" name="WcfExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="iDelProject">
+      <soap:operation soapAction="http://tempuri.org/IService1/iDelProject" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="WcfExceptionFault">
+        <soap:fault use="literal" name="WcfExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="HeartBeat">
+      <soap:operation soapAction="http://tempuri.org/IService1/HeartBeat" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="WcfExceptionFault">
+        <soap:fault use="literal" name="WcfExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="iGetAllWaveFormNames">
+      <soap:operation soapAction="http://tempuri.org/IService1/iGetAllWaveFormNames" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="WcfExceptionFault">
+        <soap:fault use="literal" name="WcfExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="iGetAllWaveForm">
+      <soap:operation soapAction="http://tempuri.org/IService1/iGetAllWaveForm" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="WcfExceptionFault">
+        <soap:fault use="literal" name="WcfExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="iGetWaveForm">
+      <soap:operation soapAction="http://tempuri.org/IService1/iGetWaveForm" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="WcfExceptionFault">
+        <soap:fault use="literal" name="WcfExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="iAddWaveForm">
+      <soap:operation soapAction="http://tempuri.org/IService1/iAddWaveForm" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="WcfExceptionFault">
+        <soap:fault use="literal" name="WcfExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="iDelWaveForm">
+      <soap:operation soapAction="http://tempuri.org/IService1/iDelWaveForm" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="WcfExceptionFault">
+        <soap:fault use="literal" name="WcfExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="iUpdateWaveForm">
+      <soap:operation soapAction="http://tempuri.org/IService1/iUpdateWaveForm" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="WcfExceptionFault">
+        <soap:fault use="literal" name="WcfExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="iGetAllAntennaNames">
+      <soap:operation soapAction="http://tempuri.org/IService1/iGetAllAntennaNames" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="WcfExceptionFault">
+        <soap:fault use="literal" name="WcfExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="iGetAllAntenna">
+      <soap:operation soapAction="http://tempuri.org/IService1/iGetAllAntenna" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="WcfExceptionFault">
+        <soap:fault use="literal" name="WcfExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="iGetAntenna">
+      <soap:operation soapAction="http://tempuri.org/IService1/iGetAntenna" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="WcfExceptionFault">
+        <soap:fault use="literal" name="WcfExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="iAddAntenna">
+      <soap:operation soapAction="http://tempuri.org/IService1/iAddAntenna" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="WcfExceptionFault">
+        <soap:fault use="literal" name="WcfExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="iDelAntenna">
+      <soap:operation soapAction="http://tempuri.org/IService1/iDelAntenna" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="WcfExceptionFault">
+        <soap:fault use="literal" name="WcfExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="iUpdateAntenna">
+      <soap:operation soapAction="http://tempuri.org/IService1/iUpdateAntenna" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="WcfExceptionFault">
+        <soap:fault use="literal" name="WcfExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="iGetAllTransmitter">
+      <soap:operation soapAction="http://tempuri.org/IService1/iGetAllTransmitter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="WcfExceptionFault">
+        <soap:fault use="literal" name="WcfExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="iGetTransmitter">
+      <soap:operation soapAction="http://tempuri.org/IService1/iGetTransmitter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="WcfExceptionFault">
+        <soap:fault use="literal" name="WcfExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="iAddTransmitter">
+      <soap:operation soapAction="http://tempuri.org/IService1/iAddTransmitter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="WcfExceptionFault">
+        <soap:fault use="literal" name="WcfExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="iDelTransmitter">
+      <soap:operation soapAction="http://tempuri.org/IService1/iDelTransmitter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="WcfExceptionFault">
+        <soap:fault use="literal" name="WcfExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="iUpdateTransmitter">
+      <soap:operation soapAction="http://tempuri.org/IService1/iUpdateTransmitter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="WcfExceptionFault">
+        <soap:fault use="literal" name="WcfExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="iGetTerNames">
+      <soap:operation soapAction="http://tempuri.org/IService1/iGetTerNames" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="WcfExceptionFault">
+        <soap:fault use="literal" name="WcfExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="iGetTer">
+      <soap:operation soapAction="http://tempuri.org/IService1/iGetTer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="WcfExceptionFault">
+        <soap:fault use="literal" name="WcfExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="iAddTerInfo">
+      <soap:operation soapAction="http://tempuri.org/IService1/iAddTerInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="WcfExceptionFault">
+        <soap:fault use="literal" name="WcfExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="iDelTerInfo">
+      <soap:operation soapAction="http://tempuri.org/IService1/iDelTerInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="WcfExceptionFault">
+        <soap:fault use="literal" name="WcfExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="CreatTables">
+      <soap:operation soapAction="http://tempuri.org/IService1/CreatTables" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="WcfExceptionFault">
+        <soap:fault use="literal" name="WcfExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetData">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="WcfExceptionFault">
+        <soap:fault use="literal" name="WcfExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="PutData">
+      <soap:operation soapAction="http://tempuri.org/IService1/PutData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="WcfExceptionFault">
+        <soap:fault use="literal" name="WcfExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="iGetMinTaskID">
+      <soap:operation soapAction="http://tempuri.org/IService1/iGetMinTaskID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="WcfExceptionFault">
+        <soap:fault use="literal" name="WcfExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="iGetFilePath">
+      <soap:operation soapAction="http://tempuri.org/IService1/iGetFilePath" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="WcfExceptionFault">
+        <soap:fault use="literal" name="WcfExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="iSetTaskState">
+      <soap:operation soapAction="http://tempuri.org/IService1/iSetTaskState" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="WcfExceptionFault">
+        <soap:fault use="literal" name="WcfExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="iGetProjectInfo">
+      <soap:operation soapAction="http://tempuri.org/IService1/iGetProjectInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="WcfExceptionFault">
+        <soap:fault use="literal" name="WcfExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://localhost:8732/Design_Time_Addresses/WcfService/Service1/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

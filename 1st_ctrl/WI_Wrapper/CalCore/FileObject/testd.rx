@@ -1,0 +1,37 @@
+begin_<points> Untitled Rx Points (2)
+RxSet 2
+active
+vertical_line yes
+cube_size 25.00000
+CVxLength 10.00000
+CVyLength 10.00000
+CVzLength 10.00000
+AutoPatternScale
+ShowDescription yes
+CVsVisible no
+CVsThickness 3
+begin_<location> 
+begin_<reference> 
+cartesian
+longitude -88.5619000000
+latitude 44.4167000000
+visible no
+terrain
+end_<reference>
+nVertices 1
+-133.58486 402.62143 2.00000
+end_<location>
+begin_<antenna> 
+antenna 0
+waveform -1
+rotation_x 30.00000
+rotation_y 0.00000
+rotation_z 0.00000
+power 0.00000
+end_<antenna>
+NoiseFigure 3.00000
+pattern_show_arrow no
+pattern_show_as_sphere no
+generate_p2p yes
+end_<points>
+
